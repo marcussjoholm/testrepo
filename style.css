@@ -1,0 +1,263 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	font-family: 'Nunito';
+	font-weight: 300;
+	color: #3E454C;
+}
+input, textarea, legend {
+	font-family: 'Nunito';
+	font-weight: 300;
+}
+ol {
+	counter-reset: li;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 12px;
+}
+ol > li {
+	position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 0 4px 14px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+	font-size: 14px;
+	color: #3E454C;
+}
+ol > li:before {
+	content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top: 8px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:8px;
+    padding:4px;
+    color:#fff;
+    background:#FF7F66;
+    font-weight:bold;
+    text-align:center;
+    border-radius: 13px;
+}
+.left p {
+	font-size: 14px;
+	line-height: 22px;
+	padding-bottom: 20px;
+	margin-top: 0;
+}
+.right p {
+	font-size: 14px;
+	padding-bottom: 10px;
+	line-height: 22px;
+	margin-top: 0;
+}
+.intro {
+	width: 100%;
+	height: 200px;
+	background: #3E454C;
+	background: url(bgvintage.jpg) top left;
+	
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(62,69,76,0.95);
+}
+.wrapper {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.wrapper a {
+	display: block;
+	padding: 15px 25px;
+	border-radius: 5px;
+	background: rgba(255,127,102,.9);
+	float: right;
+	color: #FFFFFF;
+	text-decoration: none;
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+.intro img {
+	margin-top: 58px;
+}
+.intro form h6 {
+	margin: 0 0 4px 20px;
+	padding: 0;
+	font-size: 18px;
+	color: #FFF;
+}
+.intro form p {
+	margin: 0 20px 4px;
+	color: #FFF;
+	font-size: 12px;
+}
+.intro form {
+	float: right;
+	background: none;
+	padding: 44px 0;
+	border-radius: 0 0 5px 5px;
+}
+.intro form input {
+	padding: 6px;
+	width: 188px;
+	border-color: #FFF;
+	margin-left: 20px;
+}
+.intro form .email {
+	width: 306px;
+}
+.intro form a {
+	width: 106px;
+	background: #FF7F66;
+	padding: 6px 0;
+	top: 104px;
+	right: 20px;
+}
+h3 {
+	color: #FFF;
+	width: 960px;
+	padding: 30px 0;
+	margin: 0 auto;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+}
+.headline {
+	width: 100%;
+	background: #2185C5;
+}
+.content {
+	width: 960px;
+	padding: 40px;
+	margin: 0 auto;
+	height: 440px;
+	margin-bottom: 200px;
+}
+
+.left {
+	width: 530px;
+	padding-right: 30px;
+	float: left;
+	height: 600px;
+	border-right: 1px dashed #CCC;
+}
+.right {
+	width: 360px;
+	float: right;
+}
+
+form {
+	width: 360px;
+	padding: 24px 0 36px;
+	border-radius: 5px;
+	background: #F7F5F2;
+}
+input {
+	margin-left: 30px;
+	width: 276px;
+	outline: none;
+	border: 1px solid #CCC;
+	padding: 12px 12px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background: #FFF;
+	font-size: 14px;
+}
+form a {
+	display: block;
+	margin-left: 30px;
+	padding: 12px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 14px;
+	background: #FF7F66;
+	border-radius: 5px;
+	width: 276px;
+}
+h5 {
+	margin: 0 0 4px 0;
+	color: #333;
+	background: #FFF;
+ 	font-weight: 700;
+	font-size: 20px;
+}
+
+.circle {
+	width: 50px;
+	height: 50px;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.circle-1 {
+	background: #3E454C;
+	border-radius: 5px 0 0 5px;
+}
+.circle-2 {
+	background: #2185C5;
+}
+.circle-3 {
+	background: #7ECEFD;
+}
+.circle-4 {
+	background: #FFF6E5; 
+}
+.circle-5 {
+	background: #FF7F66;
+	border-radius: 0 5px 5px 0;
+}
+.panel {
+	width: 100%;
+	background: #3E454C;
+	height: 60px;
+	overflow: hidden;
+}
+.panel:hover {
+	background: #3E454C;
+}
+.panel h6 {
+	color: #7ECEFD;
+	font-size: 18px;
+	padding: 0;
+	margin: 40px 0 0;
+}
+.panel:hover h6 {
+	color: #FF7F66;
+}
+.panel p {
+	color: #FFF;
+	font-size: 14px;
+}
+.panel-inner {
+	width: 960px;
+	margin: 0 auto;
+}
+.panel-inner h5 {
+	background: transparent;
+	text-transform: none;
+	color: #FFF;
+	font-size: 16px;
+	padding: 20px 0 0;
+	letter-spacing: 0;
+	padding: 8px 15px;
+	border-radius: 5px;
+	margin-top: 12px;
+	background: #2185C5;
+	width: auto;
+	display: inline-block;
+}
+.panel:hover .panel-inner h5 {
+	color: #3E454C;
+	background: #FF7F66;
+}
